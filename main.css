@@ -1,17 +1,28 @@
+#displayInfo {
+	margin: auto;
+	text-align: center;
+}
+
 #instaFeed {
 	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #instaFeed li {
 	float: left;
 	width: 250px;
 	height: 250px;
-	margin: 10px;
+	margin: 1em;
 }
 
 #instaFeed li img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+#instaFeed li p {
+	margin-top: .5em;
 }
 
 #gallery img:hover {

@@ -11,15 +11,19 @@
 </head>
 <body>
 	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">DEMO</button>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect tryIt">Try It</button>
-	<div id="displayInfo">
-		<img id="userPic"></img>
-		<div id="userText">
-			<h1 id="userName"></h1>
-			<h1 id="userBio"></h1>
-			<h1 id="userFullname"></h1>
-			<h1 id="userFollowers"></h1>
-			<h1 id="userFollowing"></h1>
+	<!--<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="try">Try It</button>-->
+	<div class="mdl-card" id="displayInfo">
+		<div class="mdl-card__title">
+			<h3 id="userFullname"></h3>
+		</div>
+		<div>			
+			<img id="userPic"/>
+		</div>
+		<div class="mdl-card__supporting-text">			
+			<p id="userName"></p>
+			<p id="userBio"></p>
+			<p id="userFollowers"></p>
+			<p id="userFollowing"></p>		
 		</div>
 	</div>
 	<div id="gallery">

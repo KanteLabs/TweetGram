@@ -13,24 +13,12 @@ $(document).ready(function(){
 	selfRecent();
 	$("#demo").attr("disabled", "");		
 	})
-
-	function selfRecent(){
-		$.ajax({
-			url: recentSelf,
-			dataType: 'jsonp',
-			type: 'GET',
-			data: {access_token: token, count: 9},
-			success: function(data){
-				console.log(data);
-				for(var x in data.data){
-					$('#instaFeed').append('<li class="mdl-card mdl-shadow--4dp"><img src="'+data.data[x].images.standard_resolution.url+'"></li>'); 
-				}
-			},
-			error: function(data){
-				console.log(data);
-			}	
-		})
-	}
+	
+	$("#try").click(function(){
+	userInfo().hide();
+	selfRecent();
+	$("#demo").attr("disabled", "false");		
+	})
 	
 	function userInfo(){
 		$.ajax({
@@ -39,18 +27,38 @@ $(document).ready(function(){
 			type: 'GET',
 			success: function(data){
 				console.log(data);
+				$("#displayInfo").addClass('mdl-shadow--6dp');
 				$("#userName").html(data.data.username);
 				$("#userBio").html(data.data.bio);
 				$("#userPic").attr('src', data.data.profile_picture);				
-				$("#userFullname").html('Profile of ' + data.data.full_name);			
-				$("#userFollowers").html(data.data.counts.followed_by);			
-				$("#userFollowing").html(data.data.counts.follows);			
+				$("#userFullname").html(data.data.full_name);
+				$("#userFollowing").html('Followers: ' + data.data.counts.followed_by +' and Following: ' + data.data.counts.follows);			
 			},
 			error: function(data){
 				console.log(data);
 			}	
 		})
 	}
+
+	function selfRecent(){
+		$.ajax({
+			url: recentSelf,
+			dataType: 'jsonp',
+			type: 'GET',
+			data: {access_token: token, count: 9},
+			success: function(data){
+				console.log(data);				
+				for(var x in data.data){
+					$('#instaFeed').append('<li class="mdl-card mdl-shadow--6dp"><p class="mdl-card__title">'+data.data[x].caption.text+'</p><span class="mdl-badge" data-badge="'+data.data[x].likes.count+'"></span><a href="' +data.data[x].link+ '"><img src="' +data.data[x].images.standard_resolution.url+ '"/></a></li>');
+				}
+			},
+			error: function(data){
+				console.log(data);
+			}	
+		})
+	}
+	
+	
 })
 
 
