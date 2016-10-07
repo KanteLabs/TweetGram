@@ -2,12 +2,28 @@
 <head>
 <title>TweetGram</title>
 <link rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="main.js"></script>
+
 </head>
 <body>
-<div class="gallery">
-	<ul id="instaFeed"></ul>
-</div>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">DEMO</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect tryIt">Try It</button>
+	<div id="displayInfo">
+		<img id="userPic"></img>
+		<div id="userText">
+			<h1 id="userName"></h1>
+			<h1 id="userBio"></h1>
+			<h1 id="userFullname"></h1>
+			<h1 id="userFollowers"></h1>
+			<h1 id="userFollowing"></h1>
+		</div>
+	</div>
+	<div id="gallery">
+		<ul id="instaFeed"></ul>
+	</div>
 </body>
 </html>
