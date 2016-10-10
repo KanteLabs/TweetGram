@@ -10,11 +10,11 @@
 
 </head>
 <body>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">View Demo</button>
 <header>
-	<h1>Instagram App Demo</h1>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">Launch</button>
-	<a href=""><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="learn">Learn More</button></a>
-	<!--<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="try">Try It</button>-->
+	<div class="navbar">
+		<h1><a href="https://kantelabs.github.io/TweetGram/index.html" class="home" style="float: left">Home</a>Instagram <img id="profileTiny" style="float: right"/></h1>
+	</div>
 </header>
 	<div class="mdl-card" id="displayInfo">
 		<div class="mdl-card__title">
@@ -28,6 +28,10 @@
 			<p id="userBio"></p>
 			<p id="userFollowers"></p>
 			<p id="userFollowing"></p>		
+		</div>
+		<div class="mdl-card__actions mdl-card--border">
+			<h4>Popular Tags</h4>
+			<ul id="tags" style="text-align: left"></ul>
 		</div>
 	</div>
 	<div id="gallery" class="content-grid mdl-grid">
