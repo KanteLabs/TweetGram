@@ -37,7 +37,7 @@ $(document).ready(function(){
 				$("#userPic").attr('src', data.data.profile_picture);				
 				$("#profileTiny").attr('src', data.data.profile_picture);				
 				$("#userFullname").html(data.data.full_name);
-				$("#userFollowing").html('Followers: ' + data.data.counts.followed_by +' and Following: ' + data.data.counts.follows);			
+				$("#userFollowing").html('Followers: ' + data.data.counts.followed_by +' | Following: ' + data.data.counts.follows);			
 			},
 			error: function(data){
 				console.log(data);
