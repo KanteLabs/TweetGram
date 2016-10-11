@@ -1,7 +1,8 @@
 header, footer{
 	text-align: center;
 	text-decoration: none;
-	margin-bottom: 3em;
+	margin-bottom: -4em;
+	margin-top: 0em;
 }
 
 header .navbar ul{
@@ -14,6 +15,11 @@ header .navbar ul{
 .navbar {
 	margin: 1em;
 	background-color: ;
+}
+
+#home:hover {
+	transform: translateY(-15px);
+    transition: all .75s ease;
 }
 
 #profileTiny {
@@ -30,8 +36,8 @@ footer p a, a{
 	margin: auto;
 	text-align: center;
 	float: left;
-	margin-top: 3.5em;
-	margin-left: 1em;
+	margin-top: 2.5em;
+	margin-left: 6em;
 }
 
 #instaFeed {

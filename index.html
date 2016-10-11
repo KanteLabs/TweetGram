@@ -10,12 +10,20 @@
 
 </head>
 <body>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">View Demo</button>
-<header>
+<!--
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="demo">View Demo</button>-->
+<header style="border-bottom: 1px solid #D6D3F0;">
 	<div class="navbar">
-		<h1><a href="https://kantelabs.github.io/TweetGram/index.html" class="home" style="float: left">Home</a>Instagram <img id="profileTiny" style="float: right"/></h1>
+		<h1><a href="https://kantelabs.github.io/TweetGram/index.html" class="home" style="float: left"><img id="home" src="home.svg" style="
+    height: 1em; margin-left: 0.2em;
+
+"/></a><img id="instaLogo" style="
+    max-width: 5em;
+" src="insta.png"/><img id="profileTiny" style="float: right"/></h1>
 	</div>
 </header>
+<div class="viewer" style="
+    background-color: EDF5FC;">
 	<div class="mdl-card" id="displayInfo">			
 		<div>			
 			<img id="userPic" style="margin-top: 2em"/>
@@ -35,6 +43,7 @@
 	<div id="gallery" class="content-grid mdl-grid">
 		<ul id="instaFeed"></ul>
 	</div>
+</div>	
 <footer>
 	<p>&copy Amidou Kante 2016 | <a href="https://kantelabs.github.io/index.html">My Portfolio</a></p>
 	

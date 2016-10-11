@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	$("#displayInfo").hide();
-	$(".navbar").hide();
 	var clientID = "719223fe95464479b3004f1f1c5c98b8";
 	var clientSecret = "57e4d9be1e274d2c8caf80c5781f5bb6";
 	var userID = "id25251860";
@@ -10,6 +8,9 @@ $(document).ready(function(){
 	var tagSearch = 'https://api.instagram.com/v1/tags/' + tag + '?access_token=' + token;
 	var recentSelf = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token;
 	var likeUrl = "https://api.instagram.com/v1/users/self/media/liked?access_token=" + token;
+	
+	userInfo();
+	selfRecent();
 	
 	$("#demo").click(function(){
 		$("#displayInfo").show();
