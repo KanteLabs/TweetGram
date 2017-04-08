@@ -11,6 +11,7 @@ $(document).ready(function(){
 	
 	userInfo();
 	selfRecent();
+	/* Code for when I add in a demo function to allow the user to launch the app in sandbox mode. The try it function is to allow a user to use their own profile but due to instagrams limitations it won't work for outside users unless they are developers 
 	
 	$("#demo").click(function(){
 		$("#displayInfo").show();
@@ -22,8 +23,9 @@ $(document).ready(function(){
 	
 	$("#try").click(function(){
 		onclick="location.href='oauthURL';"
-	})
+	}) */
 	
+	//This will provide the userInfo that is display, which in this case will be my profile information which is displayed as a card. 
 	function userInfo(){
 		$.ajax({
 			url:"https://api.instagram.com/v1/users/self/?access_token="+token,
@@ -31,7 +33,6 @@ $(document).ready(function(){
 			type: 'GET',
 			success: function(data){
 				console.log(data);
-				$("#displayInfo").addClass('mdl-shadow--6dp');
 				$("#userName").html(data.data.username);
 				$("#userBio").html(data.data.bio);
 				$("#userPic").attr('src', data.data.profile_picture);				
@@ -44,7 +45,8 @@ $(document).ready(function(){
 			}	
 		})
 	}
-
+	
+	//Displays the 12 most recent images of a user. Max is 20. Might expand this to be an optional amount.
 	function selfRecent(){
 		$.ajax({
 			url: recentSelf,
@@ -118,5 +120,4 @@ $(document).ready(function(){
 	}
 	
 })
-
 
