@@ -11,19 +11,6 @@ $(document).ready(function(){
 	
 	userInfo();
 	selfRecent();
-	/* Code for when I add in a demo function to allow the user to launch the app in sandbox mode. The try it function is to allow a user to use their own profile but due to instagrams limitations it won't work for outside users unless they are developers 
-	
-	$("#demo").click(function(){
-		$("#displayInfo").show();
-		$(".navbar").show();
-		userInfo();
-		selfRecent();
-		$("#demo").attr("disabled", "");		
-	})
-	
-	$("#try").click(function(){
-		onclick="location.href='oauthURL';"
-	}) */
 	
 	//This will provide the userInfo that is display, which in this case will be my profile information which is displayed as a card. 
 	function userInfo(){
