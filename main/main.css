@@ -1,0 +1,2 @@
+@media (max-width: 767px){.header{display:flex;flex-flow:row nowrap;align-content:center;align-items:center;border-bottom:1px solid #D6D3F0;padding:.5em}.header img.homeLogo{height:50px;position:absolute;left:0}.header img.instaLogo{height:50px;margin:0 auto}.header #profileTiny{height:40px;border-radius:100%;border:1px solid black;position:absolute;right:0}.viewer{background-color:#EDF5FC}.viewer #displayInfo{background-color:#fff}.viewer #displayInfo #userPic{border-radius:100%}footer{text-align:center}}
+/*# sourceMappingURL=main.css.map */
