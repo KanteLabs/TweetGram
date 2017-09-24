@@ -1,26 +1,28 @@
 @media (max-width: 767px){
-	.header{
+	header{
 		display: flex;
 		flex-flow: row nowrap;
-		align-content: center;
+		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid #D6D3F0;
-		padding: .5em;
+		padding: .5em 0em;
 		img.homeLogo{
 			height: 50px;
-			position: absolute;
-			left: 0;
 		}
-		img.instaLogo{
-			height: 50px;
-			margin: 0 auto;
+		div{
+			width: 70vw;
+			margin: 0em 1em;
+			img.instaLogo{
+				height: 100%;
+				width: 100%;
+				position: relative;
+				top: 0.3em;
+			}
 		}
 		#profileTiny{
 			height: 40px;
 			border-radius: 100%;
 			border: 1px solid black;
-			position: absolute;
-			right: 0;
 		}
 	}
 
