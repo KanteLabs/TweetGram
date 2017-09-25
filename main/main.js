@@ -43,7 +43,7 @@ $(document).ready(function(){
 			success: function(data){
 				console.log(data);				
 				for(var x in data.data){
-					$('#instaFeed').append(`<li class="recent"><span class="">${data.data[x].likes.count}</span><a href="${data.data[x].link}"><img src=${data.data[x].images.standard_resolution.url} /></a></li>`);
+					$('#instaFeed').append(`<li class="insta-image"><span class="">${data.data[x].likes.count}</span><a href="${data.data[x].link}"><img src=${data.data[x].images.standard_resolution.url} /></a></li>`);
 					if(data.data[x].tags != ""){						
 						$('#tags').append(`<li><a href="${data.data[x].link}">${data.data[x].tags}</a></li>`);
 					};
@@ -64,7 +64,7 @@ $(document).ready(function(){
 			success: function(data){
 				console.log(data);				
 				for(var x in data.data){
-					$('#instaFeed').append('<li class="mdl-card mdl-shadow--6dp"><span class="mdl-badge" data-badge="'+data.data[x].likes.count+'"></span><a href="' +data.data[x].link+ '"><img src="' +data.data[x].images.standard_resolution.url+ '"/></a></li>');
+					$('#instaFeed').append(`<li class="insta-image"><span class="">${data.data[x].likes.count}</span><a href="${data.data[x].link}"><img src=${data.data[x].images.standard_resolution.url} /></a></li>`);
 				}
 			},
 			error: function(data){
