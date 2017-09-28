@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #D6D3F0;
-    padding: .5em 0em; }
+    padding: .5em 1em; }
     header img.homeLogo {
       height: 50px; }
     header div {
@@ -31,7 +31,8 @@
       div#displayInfo div.profileHolder img#userPic {
         width: 100%; }
     div#displayInfo .userInfo {
-      line-height: 100%; }
+      line-height: 100%;
+      text-align: center; }
 
   .gallery {
     padding: 1em 2em; }
@@ -41,6 +42,8 @@
       list-style: none;
       justify-content: space-around;
       border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 2em;
       padding-top: 1em; }
       .gallery ul#instaFeed li.insta-image {
         width: 25vw; }
