@@ -57,5 +57,64 @@
 
   footer {
     text-align: center; } }
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D6D3F0;
+    padding: .5em 1em; }
+    header img.homeLogo {
+      width: 5em; }
+    header div {
+      width: 20vw;
+      margin: 0em 1em; }
+      header div img.instaLogo {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0.3em; }
+    header #profileTiny {
+      width: 4em;
+      border-radius: 100%;
+      border: 1px solid black; }
+
+  div#displayInfo {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1em; }
+    div#displayInfo div.profileHolder {
+      width: 20vw;
+      margin: 0 auto; }
+      div#displayInfo div.profileHolder img#userPic {
+        width: 100%; }
+    div#displayInfo .userInfo {
+      line-height: 100%;
+      text-align: center; }
+
+  .gallery {
+    padding: 1em 2em; }
+    .gallery ul#instaFeed {
+      display: flex;
+      flex-flow: row wrap;
+      list-style: none;
+      justify-content: space-around;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 2em;
+      padding-top: 1em; }
+      .gallery ul#instaFeed li.insta-image {
+        width: 25vw; }
+      .gallery ul#instaFeed a img {
+        width: 100%; }
+
+  #displayInfo {
+    background-color: #fff; }
+    #displayInfo #userPic {
+      border-radius: 100%; }
+
+  footer {
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
