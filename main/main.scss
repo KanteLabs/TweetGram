@@ -26,6 +26,23 @@
 		}
 	}
 
+	ul#instaFeed {
+		display: flex;
+		width: 100vw;
+		flex-flow: row wrap;
+		list-style: none;
+		justify-content: space-around;
+		li.insta-image {
+			width: 25vw;
+			position: relative;
+			left: -3em;
+		}
+		a img {
+			width: 100%;
+		} 
+	}
+	
+
 	.viewer{
     	background-color: #EDF5FC;
 		#displayInfo{
