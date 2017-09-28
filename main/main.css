@@ -9,7 +9,7 @@
     header img.homeLogo {
       height: 50px; }
     header div {
-      width: 70vw;
+      width: 40vw;
       margin: 0em 1em; }
       header div img.instaLogo {
         height: 100%;
@@ -85,7 +85,7 @@
     margin: 0 auto;
     padding: 1em; }
     div#displayInfo div.profileHolder {
-      width: 20vw;
+      width: 10vw;
       margin: 0 auto; }
       div#displayInfo div.profileHolder img#userPic {
         width: 100%; }
@@ -105,7 +105,7 @@
       padding-bottom: 2em;
       padding-top: 1em; }
       .gallery ul#instaFeed li.insta-image {
-        width: 25vw; }
+        width: 20vw; }
       .gallery ul#instaFeed a img {
         width: 100%; }
 
