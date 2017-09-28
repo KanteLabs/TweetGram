@@ -26,19 +26,22 @@
 		}
 	}
 
-	ul#instaFeed {
-		display: flex;
-		width: 100vw;
-		flex-flow: row wrap;
-		list-style: none;
-		justify-content: space-around;
-		li.insta-image {
-			width: 25vw;
+	.gallery {
+		padding: 1em 2em;
+		ul#instaFeed {
+			display: flex;
+			flex-flow: row wrap;
+			list-style: none;
+			justify-content: space-around;
+			li.insta-image {
+				width: 25vw;
+			}
+			a img {
+				width: 100%;
+			} 
 		}
-		a img {
-			width: 100%;
-		} 
 	}
+
 	
 	#displayInfo{
 		background-color: #fff;
