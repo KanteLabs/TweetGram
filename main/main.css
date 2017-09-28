@@ -28,18 +28,14 @@
     list-style: none;
     justify-content: space-around; }
     ul#instaFeed li.insta-image {
-      width: 25vw;
-      position: relative;
-      left: -3em; }
+      width: 25vw; }
     ul#instaFeed a img {
       width: 100%; }
 
-  .viewer {
-    background-color: #EDF5FC; }
-    .viewer #displayInfo {
-      background-color: #fff; }
-      .viewer #displayInfo #userPic {
-        border-radius: 100%; }
+  #displayInfo {
+    background-color: #fff; }
+    #displayInfo #userPic {
+      border-radius: 100%; }
 
   footer {
     text-align: center; } }

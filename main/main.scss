@@ -34,22 +34,16 @@
 		justify-content: space-around;
 		li.insta-image {
 			width: 25vw;
-			position: relative;
-			left: -3em;
 		}
 		a img {
 			width: 100%;
 		} 
 	}
 	
-
-	.viewer{
-    	background-color: #EDF5FC;
-		#displayInfo{
-			background-color: #fff;
-			#userPic{
-				border-radius: 100%;
-			}
+	#displayInfo{
+		background-color: #fff;
+		#userPic{
+			border-radius: 100%;
 		}
 	}
 	footer{
